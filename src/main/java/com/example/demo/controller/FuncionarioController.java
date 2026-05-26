@@ -6,6 +6,7 @@ import com.example.demo.model.Funcionario;
 import com.example.demo.service.FuncionarioService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +19,9 @@ public class FuncionarioController {
     @Autowired
     private FuncionarioService funcionarioService;
 
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
     @PostMapping
     public ResponseEntity<FuncionarioResponseDto> criarFuncionario(@RequestBody @Valid FuncionarioRequestDto funcionarioRequestDto) {
         Funcionario funcionario = new Funcionario();
@@ -26,6 +30,8 @@ public class FuncionarioController {
         funcionario.setTelefone(funcionarioRequestDto.telefone());
         funcionario.setCpf(funcionarioRequestDto.cpf());
         funcionario.setSalario(funcionarioRequestDto.salario());
+        funcionario.setUsername(funcionarioRequestDto.username());
+        funcionario.setPassword(funcionarioRequestDto.password());
 
         Funcionario novoFuncionario = funcionarioService.criarFuncionario(funcionario);
         return ResponseEntity.status(HttpStatus.CREATED).body(new FuncionarioResponseDto(novoFuncionario));

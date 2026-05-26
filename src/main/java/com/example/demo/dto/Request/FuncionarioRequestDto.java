@@ -6,15 +6,15 @@ import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import java.math.BigDecimal;
+import com.example.demo.model.UserRole;
 
 public record FuncionarioRequestDto(
         @NotBlank(message = "O nome do funcionário é obrigatório")
         @Size(max = 100, message = "O nome do funcionário deve ter no máximo 100 caracteres")
         String nome,
 
-        @NotBlank(message = "O cargo do funcionário é obrigatório")
-        @Size(max = 100, message = "O cargo do funcionário deve ter no máximo 100 caracteres")
-        String cargo,
+        @NotNull(message = "O cargo do funcionário é obrigatório")
+        UserRole cargo,
 
         @NotBlank(message = "O telefone do funcionário é obrigatório")
         @Pattern(regexp = "\\d{8,14}", message = "Telefone deve conter de 8 a 14 dígitos")
@@ -26,5 +26,12 @@ public record FuncionarioRequestDto(
 
         @NotNull(message = "O salário do funcionário é obrigatório")
         @Positive(message = "O salário deve ser positivo")
-        BigDecimal salario
+        BigDecimal salario,
+
+        @NotBlank(message = "O username é obrigatório")
+        @Size(max = 100, message = "O username deve ter no máximo 100 caracteres")
+        String username,
+
+        @NotBlank(message = "A senha é obrigatória")
+        String password
 ) {}

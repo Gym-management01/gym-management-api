@@ -3,6 +3,7 @@ package com.example.demo.service;
 import com.example.demo.model.Funcionario;
 import com.example.demo.repository.FuncionarioRepository;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -12,14 +13,17 @@ import java.util.List;
 public class FuncionarioService {
 
     private final FuncionarioRepository funcionarioRepository;
+    private final PasswordEncoder passwordEncoder;
 
-        public FuncionarioService(FuncionarioRepository funcionarioRepository) {
-            this.funcionarioRepository = funcionarioRepository;
-        }
+    public FuncionarioService(FuncionarioRepository funcionarioRepository, PasswordEncoder passwordEncoder) {
+        this.funcionarioRepository = funcionarioRepository;
+        this.passwordEncoder = passwordEncoder;
+    }
 
 
     public Funcionario criarFuncionario(Funcionario funcionario) {
         validarFuncionario(funcionario);
+        funcionario.setPassword(passwordEncoder.encode(funcionario.getPassword()));
         return funcionarioRepository.save(funcionario);
     }
 

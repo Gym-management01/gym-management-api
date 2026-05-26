@@ -3,16 +3,18 @@ package com.example.demo.dto.Response;
 import com.example.demo.model.Funcionario;
 
 import java.math.BigDecimal;
+import com.example.demo.model.UserRole;
 
 public record FuncionarioResponseDto(
         Long id,
         String nome,
-        String cargo,
+        UserRole cargo,
         String telefone,
         String cpf,
-        BigDecimal salario
+        BigDecimal salario,
+        String username
 ) {
     public FuncionarioResponseDto(Funcionario funcionario) {
-        this(funcionario.getId(), funcionario.getNome(), funcionario.getCargo(), funcionario.getTelefone(), funcionario.getCpf(), funcionario.getSalario());
+        this(funcionario.getId(), funcionario.getNome(), funcionario.getCargo(), funcionario.getTelefone(), funcionario.getCpf(), funcionario.getSalario(), funcionario.getUsername());
     }
 }
