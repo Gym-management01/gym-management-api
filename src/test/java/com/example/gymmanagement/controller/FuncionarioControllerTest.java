@@ -40,7 +40,7 @@ class FuncionarioControllerTest {
     void criarFuncionario_retornaCreated() throws Exception {
         FuncionarioRequestDto request = new FuncionarioRequestDto(
                 "Carlos",
-                "Instrutor",
+                "INSTRUTOR",
                 "11999998888",
                 "12345678901",
                 new BigDecimal("2500.00")
