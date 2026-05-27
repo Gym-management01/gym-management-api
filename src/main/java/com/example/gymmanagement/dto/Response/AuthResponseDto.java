@@ -1,4 +1,4 @@
-package com.example.demo.dto.Response;
+package com.example.gymmanagement.dto.Response;
 
 public record AuthResponseDto(
         String token,

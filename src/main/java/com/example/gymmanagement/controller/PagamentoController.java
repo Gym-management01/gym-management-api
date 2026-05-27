@@ -1,10 +1,10 @@
-package com.example.demo.controller;
+package com.example.gymmanagement.controller;
 
-import com.example.demo.dto.Request.PagamentoPagamentoDto;
-import com.example.demo.dto.Request.PagamentoRequestDto;
-import com.example.demo.dto.Response.PagamentoResponseDto;
-import com.example.demo.model.PagamentoStatus;
-import com.example.demo.service.PagamentoService;
+import com.example.gymmanagement.dto.Request.PagamentoPagamentoDto;
+import com.example.gymmanagement.dto.Request.PagamentoRequestDto;
+import com.example.gymmanagement.dto.Response.PagamentoResponseDto;
+import com.example.gymmanagement.model.PagamentoStatus;
+import com.example.gymmanagement.service.PagamentoService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

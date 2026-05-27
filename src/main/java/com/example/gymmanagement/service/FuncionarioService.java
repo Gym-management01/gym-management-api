@@ -1,7 +1,7 @@
-package com.example.demo.service;
+package com.example.gymmanagement.service;
 
-import com.example.demo.model.Funcionario;
-import com.example.demo.repository.FuncionarioRepository;
+import com.example.gymmanagement.model.Funcionario;
+import com.example.gymmanagement.repository.FuncionarioRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

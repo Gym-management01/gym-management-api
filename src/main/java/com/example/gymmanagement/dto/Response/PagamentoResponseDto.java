@@ -1,8 +1,8 @@
-package com.example.demo.dto.Response;
+package com.example.gymmanagement.dto.Response;
 
-import com.example.demo.model.FormaPagamento;
-import com.example.demo.model.Pagamento;
-import com.example.demo.model.PagamentoStatus;
+import com.example.gymmanagement.model.FormaPagamento;
+import com.example.gymmanagement.model.Pagamento;
+import com.example.gymmanagement.model.PagamentoStatus;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

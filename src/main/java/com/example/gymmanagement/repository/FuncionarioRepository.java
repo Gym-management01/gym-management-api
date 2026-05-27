@@ -1,6 +1,6 @@
-package com.example.demo.repository;
+package com.example.gymmanagement.repository;
 
-import com.example.demo.model.Funcionario;
+import com.example.gymmanagement.model.Funcionario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 

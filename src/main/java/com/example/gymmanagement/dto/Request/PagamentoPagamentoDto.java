@@ -1,4 +1,4 @@
-package com.example.demo.dto.Request;
+package com.example.gymmanagement.dto.Request;
 
 import java.time.LocalDate;
 

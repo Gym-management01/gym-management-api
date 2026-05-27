@@ -1,6 +1,6 @@
-package com.example.demo.dto.Update;
+package com.example.gymmanagement.dto.Update;
 
-import com.example.demo.model.Plano;
+import com.example.gymmanagement.model.Plano;
 
 import java.math.BigDecimal;
 

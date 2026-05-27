@@ -1,9 +1,9 @@
-package com.example.demo.controller;
+package com.example.gymmanagement.controller;
 
-import com.example.demo.dto.Request.FuncionarioRequestDto;
-import com.example.demo.dto.Response.FuncionarioResponseDto;
-import com.example.demo.model.Funcionario;
-import com.example.demo.service.FuncionarioService;
+import com.example.gymmanagement.dto.Request.FuncionarioRequestDto;
+import com.example.gymmanagement.dto.Response.FuncionarioResponseDto;
+import com.example.gymmanagement.model.Funcionario;
+import com.example.gymmanagement.service.FuncionarioService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;

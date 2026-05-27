@@ -1,6 +1,6 @@
-package com.example.demo.security;
+package com.example.gymmanagement.security;
 
-import com.example.demo.repository.FuncionarioRepository;
+import com.example.gymmanagement.repository.FuncionarioRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;

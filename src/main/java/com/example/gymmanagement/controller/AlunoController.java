@@ -1,8 +1,8 @@
-package com.example.demo.controller;
+package com.example.gymmanagement.controller;
 
-import com.example.demo.dto.Request.AlunoRequestDto;
-import com.example.demo.dto.Response.AlunoResponseDto;
-import com.example.demo.service.AlunoService;
+import com.example.gymmanagement.dto.Request.AlunoRequestDto;
+import com.example.gymmanagement.dto.Response.AlunoResponseDto;
+import com.example.gymmanagement.service.AlunoService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

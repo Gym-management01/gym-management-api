@@ -1,6 +1,6 @@
-package com.example.demo.dto.Request;
+package com.example.gymmanagement.dto.Request;
 
-import com.example.demo.model.FormaPagamento;
+import com.example.gymmanagement.model.FormaPagamento;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 

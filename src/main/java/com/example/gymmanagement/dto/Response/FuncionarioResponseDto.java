@@ -1,9 +1,9 @@
-package com.example.demo.dto.Response;
+package com.example.gymmanagement.dto.Response;
 
-import com.example.demo.model.Funcionario;
+import com.example.gymmanagement.model.Funcionario;
 
 import java.math.BigDecimal;
-import com.example.demo.model.UserRole;
+import com.example.gymmanagement.model.UserRole;
 
 public record FuncionarioResponseDto(
         Long id,

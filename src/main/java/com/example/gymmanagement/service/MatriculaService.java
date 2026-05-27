@@ -1,13 +1,13 @@
-package com.example.demo.service;
+package com.example.gymmanagement.service;
 
-import com.example.demo.model.Aluno;
-import com.example.demo.model.FormaPagamento;
-import com.example.demo.model.Matricula;
-import com.example.demo.model.Pagamento;
-import com.example.demo.model.PagamentoStatus;
-import com.example.demo.repository.AlunoRepository;
-import com.example.demo.repository.MatriculaRepository;
-import com.example.demo.repository.PagamentoRepository;
+import com.example.gymmanagement.model.Aluno;
+import com.example.gymmanagement.model.FormaPagamento;
+import com.example.gymmanagement.model.Matricula;
+import com.example.gymmanagement.model.Pagamento;
+import com.example.gymmanagement.model.PagamentoStatus;
+import com.example.gymmanagement.repository.AlunoRepository;
+import com.example.gymmanagement.repository.MatriculaRepository;
+import com.example.gymmanagement.repository.PagamentoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
@@ -17,15 +17,16 @@ import java.util.List;
 
 @Service
 public class MatriculaService {
-    @Autowired
-    private AlunoRepository alunoRepository;
 
+
+    private final AlunoRepository alunoRepository;
     private final PagamentoRepository pagamentoRepository;
     private final MatriculaRepository matriculaRepository;
 
-    public MatriculaService(MatriculaRepository matriculaRepository, PagamentoRepository pagamentoRepository) {
+    public MatriculaService(AlunoRepository alunoRepository,MatriculaRepository matriculaRepository, PagamentoRepository pagamentoRepository) {
         this.matriculaRepository = matriculaRepository;
         this.pagamentoRepository = pagamentoRepository;
+        this.alunoRepository = alunoRepository;
     }
 
     public Matricula criarMatricula(Matricula matricula) {

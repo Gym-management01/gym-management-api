@@ -1,7 +1,7 @@
-package com.example.demo.service;
+package com.example.gymmanagement.service;
 
-import com.example.demo.model.Academia;
-import com.example.demo.repository.AcademiaRepository;
+import com.example.gymmanagement.model.Academia;
+import com.example.gymmanagement.repository.AcademiaRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;

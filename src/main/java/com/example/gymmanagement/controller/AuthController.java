@@ -1,17 +1,17 @@
-package com.example.demo.controller;
+package com.example.gymmanagement.controller;
 
-import com.example.demo.dto.Request.AuthRequestDto;
-import com.example.demo.dto.Response.AuthResponseDto;
-import com.example.demo.dto.Response.FuncionarioResponseDto;
-import com.example.demo.model.Funcionario;
-import com.example.demo.security.JwtService;
+import com.example.gymmanagement.dto.Request.AuthRequestDto;
+import com.example.gymmanagement.dto.Response.AuthResponseDto;
+import com.example.gymmanagement.dto.Response.FuncionarioResponseDto;
+import com.example.gymmanagement.model.Funcionario;
+import com.example.gymmanagement.security.JwtService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
-import com.example.demo.repository.FuncionarioRepository;
+import com.example.gymmanagement.repository.FuncionarioRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import java.util.Optional;
 
