@@ -1,8 +1,8 @@
-package com.example.demo.controller;
+package com.example.gymmanagement.controller;
 
-import com.example.demo.dto.Request.FuncionarioRequestDto;
-import com.example.demo.model.Funcionario;
-import com.example.demo.service.FuncionarioService;
+import com.example.gymmanagement.dto.Request.FuncionarioRequestDto;
+import com.example.gymmanagement.model.Funcionario;
+import com.example.gymmanagement.service.FuncionarioService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.junit.jupiter.api.Test;

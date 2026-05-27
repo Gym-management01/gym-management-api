@@ -1,7 +1,7 @@
-package com.example.demo.dto.Response;
+package com.example.gymmanagement.dto.Response;
 
-import com.example.demo.model.Matricula;
-import com.example.demo.model.Plano;
+import com.example.gymmanagement.model.Matricula;
+import com.example.gymmanagement.model.Plano;
 import java.time.LocalDate;
 public record MatriculaResponseDto(
         Long id,

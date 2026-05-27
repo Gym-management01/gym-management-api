@@ -1,4 +1,4 @@
-package com.example.demo.dto.Request;
+package com.example.gymmanagement.dto.Request;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;

@@ -1,10 +1,10 @@
-package com.example.demo.controller;
+package com.example.gymmanagement.controller;
 
-import com.example.demo.dto.Request.MatriculaRequestDto;
-import com.example.demo.dto.Response.MatriculaResponseDto;
-import com.example.demo.model.Aluno;
-import com.example.demo.model.Matricula;
-import com.example.demo.service.MatriculaService;
+import com.example.gymmanagement.dto.Request.MatriculaRequestDto;
+import com.example.gymmanagement.dto.Response.MatriculaResponseDto;
+import com.example.gymmanagement.model.Aluno;
+import com.example.gymmanagement.model.Matricula;
+import com.example.gymmanagement.service.MatriculaService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

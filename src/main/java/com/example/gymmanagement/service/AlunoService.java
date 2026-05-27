@@ -1,9 +1,9 @@
-package com.example.demo.service;
+package com.example.gymmanagement.service;
 
-import com.example.demo.dto.Request.AlunoRequestDto;
-import com.example.demo.dto.Response.AlunoResponseDto;
-import com.example.demo.model.Aluno;
-import com.example.demo.repository.AlunoRepository;
+import com.example.gymmanagement.dto.Request.AlunoRequestDto;
+import com.example.gymmanagement.dto.Response.AlunoResponseDto;
+import com.example.gymmanagement.model.Aluno;
+import com.example.gymmanagement.repository.AlunoRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;

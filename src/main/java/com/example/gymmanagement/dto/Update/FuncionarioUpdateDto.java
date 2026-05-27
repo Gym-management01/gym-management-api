@@ -1,6 +1,6 @@
-package com.example.demo.dto.Update;
+package com.example.gymmanagement.dto.Update;
 
-import com.example.demo.model.UserRole;
+import com.example.gymmanagement.model.UserRole;
 
 public record FuncionarioUpdateDto(
         UserRole cargo,

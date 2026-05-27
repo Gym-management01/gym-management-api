@@ -1,10 +1,10 @@
-package com.example.demo.controller;
+package com.example.gymmanagement.controller;
 
-import com.example.demo.dto.Request.MatriculaRequestDto;
-import com.example.demo.model.Aluno;
-import com.example.demo.model.Matricula;
-import com.example.demo.model.Plano;
-import com.example.demo.service.MatriculaService;
+import com.example.gymmanagement.dto.Request.MatriculaRequestDto;
+import com.example.gymmanagement.model.Aluno;
+import com.example.gymmanagement.model.Matricula;
+import com.example.gymmanagement.model.Plano;
+import com.example.gymmanagement.service.MatriculaService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.junit.jupiter.api.Test;

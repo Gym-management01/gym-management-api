@@ -1,5 +1,5 @@
-package com.example.demo.dto.Response;
-import com.example.demo.model.Academia;
+package com.example.gymmanagement.dto.Response;
+import com.example.gymmanagement.model.Academia;
 public record AcademiaResponseDto(
         Long id,
         String nome,

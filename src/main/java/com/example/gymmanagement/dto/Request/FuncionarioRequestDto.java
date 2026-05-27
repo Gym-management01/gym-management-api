@@ -1,4 +1,4 @@
-package com.example.demo.dto.Request;
+package com.example.gymmanagement.dto.Request;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -6,7 +6,7 @@ import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import java.math.BigDecimal;
-import com.example.demo.model.UserRole;
+import com.example.gymmanagement.model.UserRole;
 
 public record FuncionarioRequestDto(
         @NotBlank(message = "O nome do funcionário é obrigatório")

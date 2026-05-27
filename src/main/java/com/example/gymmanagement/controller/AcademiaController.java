@@ -1,9 +1,9 @@
-package com.example.demo.controller;
+package com.example.gymmanagement.controller;
 
-import com.example.demo.dto.Request.AcademiaRequestDto;
-import com.example.demo.dto.Response.AcademiaResponseDto;
-import com.example.demo.model.Academia;
-import com.example.demo.service.AcademiaService;
+import com.example.gymmanagement.dto.Request.AcademiaRequestDto;
+import com.example.gymmanagement.dto.Response.AcademiaResponseDto;
+import com.example.gymmanagement.model.Academia;
+import com.example.gymmanagement.service.AcademiaService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

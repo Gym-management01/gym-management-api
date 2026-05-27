@@ -1,7 +1,7 @@
-package com.example.demo.dto.Response;
+package com.example.gymmanagement.dto.Response;
 
-import com.example.demo.model.Aluno;
-import com.example.demo.model.Plano;
+import com.example.gymmanagement.model.Aluno;
+import com.example.gymmanagement.model.Plano;
 import java.math.BigDecimal;
 
 public record AlunoResponseDto(

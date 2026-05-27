@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package com.example.gymmanagement.model;
 
 public enum Plano {
     BASIC,
